@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="sale_order_form_quote_inherit" model="ir.ui.view">
         <field name="name">sale.order.form.quote.inherit</field>
@@ -5,9 +6,11 @@
         <field name="inherit_id" ref="sale_subscription.sale_subscription_order_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//group[@name='subscription_details']" position="inside">
-                <field name="next_quota"/>
-                <field name="max_quotas"/>
-                <field name="quota_legend"/>
+                <field name="next_quota" invisible="not is_subscription"/>
+                <field name="max_quotas" invisible="not is_subscription"/>
+                <field name="quota_legend" 
+                       invisible="not is_subscription" 
+                       placeholder="Ej: Cuota %d de %d"/>
             </xpath>
         </field>
     </record>
