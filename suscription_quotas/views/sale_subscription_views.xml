@@ -5,7 +5,7 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale_subscription.sale_subscription_order_view_form"/>
         <field name="arch" type="xml">
-            <xpath expr="//group[@name='subscription_details']" position="inside">
+            <xpath expr="//field[@name='start_date']" position="after">
                 <field name="next_quota" invisible="not is_subscription"/>
                 <field name="max_quotas" invisible="not is_subscription"/>
                 <field name="quota_legend" 
