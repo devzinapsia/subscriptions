@@ -1,6 +1,6 @@
 {
     'name': 'Subscription Quotas',
-    'version': '18.0.1.0.0', # Cambiar a 19.0 en la rama correspondiente
+    'version': '19.0.1.0.0',
     'category': 'Sales/Subscriptions',
     'summary': 'Manejo de cuotas máximas y leyendas en facturación recurrente',
     'author': 'Zinapsia',
