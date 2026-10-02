@@ -1,15 +1,17 @@
 {
-    'name': 'Subscription Quotas',
-    'version': '19.0.1.0.1',
+    'name': 'Control de cuotas de suscripciones',
+    'version': '19.0.2.0.0',
     'category': 'Sales/Subscriptions',
-    'summary': 'Manejo de cuotas máximas y leyendas en facturación recurrente',
+    'summary': 'Manejo de cuotas máximas, leyendas en facturación recurrente '
+               'y cierre automático al facturar la última cuota',
     'author': 'Zinapsia',
-    'website': 'https://github.com/devzinapsia/suscriptions',
+    'website': 'https://www.zinapsia.com',
+    'license': 'AGPL-3',
     'depends': ['sale_subscription'],
     'data': [
         'views/sale_subscription_views.xml',
     ],
     'installable': True,
     'application': False,
-    'license': 'LGPL-3',
+    'auto_install': False,
 }

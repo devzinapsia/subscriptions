@@ -1,0 +1,158 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* subscription_quotas
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-02 17:30+0000\n"
+"PO-Revision-Date: 2026-10-02 17:30+0000\n"
+"Last-Translator: Zinapsia\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: subscription_quotas
+#. odoo-python
+#: code:addons/subscription_quotas/models/sale_order.py:0
+msgid "Billed installment %d of %d"
+msgstr "Cuota facturada %d de %d"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,field_description:subscription_quotas.field_account_move__display_name
+#: model:ir.model.fields,field_description:subscription_quotas.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:subscription_quotas.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: subscription_quotas
+#: model_terms:ir.ui.view,arch_db:subscription_quotas.sale_order_form_quote_inherit
+msgid "E.g. Installment %d of %d"
+msgstr "Ej: Cuota %d de %d"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,field_description:subscription_quotas.field_account_move__id
+#: model:ir.model.fields,field_description:subscription_quotas.field_account_move_line__id
+#: model:ir.model.fields,field_description:subscription_quotas.field_sale_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,field_description:subscription_quotas.field_account_move_line__subscription_quota
+msgid "Installment number"
+msgstr "Número de cuota"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,help:subscription_quotas.field_sale_order__next_quota
+msgid ""
+"Installment number the next invoice will carry. It moves forward when an "
+"invoice carrying an installment is confirmed."
+msgstr ""
+"Número de cuota que llevará la próxima factura. Avanza cuando se confirma "
+"una factura que lleva una cuota."
+
+#. module: subscription_quotas
+#: model:ir.model,name:subscription_quotas.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: subscription_quotas
+#: model:ir.model,name:subscription_quotas.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,field_description:subscription_quotas.field_sale_order__quota_legend
+msgid "Line legend"
+msgstr "Leyenda artículo"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,field_description:subscription_quotas.field_sale_order__max_quotas
+msgid "Maximum number of installments"
+msgstr "Cantidad máxima de cuotas"
+
+#. module: subscription_quotas
+#: model:ir.model.fields,field_description:subscription_quotas.field_sale_order__next_quota
+msgid "Next installment"
+msgstr "Próxima cuota"
+
+#. module: subscription_quotas
+#: model:ir.model,name:subscription_quotas.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: subscription_quotas
+#. odoo-python
+#: code:addons/subscription_quotas/models/sale_order.py:0
+msgid ""
+"Subscription closed automatically: all %(count)s installments have been "
+"invoiced."
+msgstr ""
+"Suscripción cerrada automáticamente: se facturaron las %(count)s cuotas."
+
+#. module: subscription_quotas
+#: model:ir.model.fields,help:subscription_quotas.field_account_move_line__subscription_quota
+msgid ""
+"Subscription installment this line invoices. The subscription counter only "
+"moves forward when the invoice is confirmed."
+msgstr ""
+"Cuota de la suscripción que factura esta línea. El contador de la "
+"suscripción solo avanza cuando se confirma la factura."
+
+#. module: subscription_quotas
+#: model:ir.model.fields,help:subscription_quotas.field_sale_order__quota_legend
+msgid ""
+"Text appended to every product line of the invoice. It must contain exactly "
+"two %d placeholders: the installment number and the total number of "
+"installments."
+msgstr ""
+"Texto que se agrega a cada línea de producto de la factura. Debe contener "
+"exactamente dos marcadores %d: el número de cuota y la cantidad total de "
+"cuotas."
+
+#. module: subscription_quotas
+#. odoo-python
+#: code:addons/subscription_quotas/models/sale_order.py:0
+msgid ""
+"The line legend must contain exactly two %d placeholders (installment number"
+" and total), e.g. \"Installment %d of %d\"."
+msgstr ""
+"La leyenda debe contener exactamente dos marcadores %d (número de cuota y "
+"total), por ejemplo \"Cuota %d de %d\"."
+
+#. module: subscription_quotas
+#. odoo-python
+#: code:addons/subscription_quotas/models/sale_order.py:0
+msgid "The maximum number of installments cannot be negative."
+msgstr "La cantidad máxima de cuotas no puede ser negativa."
+
+#. module: subscription_quotas
+#. odoo-python
+#: code:addons/subscription_quotas/models/sale_order.py:0
+msgid ""
+"The next installment (%(next)s) cannot be greater than the maximum number of"
+" installments plus one (%(max)s)."
+msgstr ""
+"La próxima cuota (%(next)s) no puede ser mayor que la cantidad máxima de "
+"cuotas más uno (%(max)s)."
+
+#. module: subscription_quotas
+#. odoo-python
+#: code:addons/subscription_quotas/models/sale_order.py:0
+msgid "The next installment must be 1 or greater."
+msgstr "La próxima cuota debe ser 1 o mayor."
+
+#. module: subscription_quotas
+#: model:ir.model.fields,help:subscription_quotas.field_sale_order__max_quotas
+msgid ""
+"Total number of installments of this subscription. Leave it at 0 to disable "
+"installment control. Once the last installment is invoiced and confirmed, "
+"the subscription is closed automatically."
+msgstr ""
+"Cantidad total de cuotas de esta suscripción. Dejar en 0 para desactivar el "
+"control de cuotas. Cuando se factura y confirma la última cuota, la "
+"suscripción se cierra automáticamente."
